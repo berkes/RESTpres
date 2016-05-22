@@ -1,0 +1,10 @@
+{
+  "name": "NAME",
+  "sections": [
+    {"section":"intro"},
+    {"section":"one"},
+    {"section":"two"},
+    {"section":"three"},
+    {"section":"outro"}
+  ]
+}
