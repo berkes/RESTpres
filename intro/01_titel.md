@@ -1,4 +1,6 @@
 !SLIDE center
 
 # REST API implementaties
-## Meeting or group - DATE
+## Nijmegen Developer Meetup - 24 mei 2016
+
+> Hoe bouw ik een goede REST API?

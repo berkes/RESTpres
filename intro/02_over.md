@@ -13,3 +13,6 @@
 !SLIDE bullets incremental
 # Over mij en REST API implementaties #
 
+* Ik bouw een REST API voor een betaalapp en -platform.
+* Ik ontwikkelde de API voor Wiebetaaltwat
+* Ik ontwikkelde een API voor Savvii, Nijmeegse WordPress Hosting

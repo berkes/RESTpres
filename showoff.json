@@ -2,9 +2,11 @@
   "name": "REST API implementaties",
   "sections": [
     {"section":"intro"},
-    {"section":"one"},
-    {"section":"two"},
-    {"section":"three"},
+    {"section":"APIs"},
+    {"section":"REST"},
+    {"section":"REST-APIs"},
+    {"section":"HATEOAS"},
+    {"section":"ToiletBuffer"},
     {"section":"outro"}
   ]
 }
