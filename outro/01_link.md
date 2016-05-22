@@ -1,3 +1,3 @@
 !SLIDE bullets
 
-* [berk.es/REPO](http://berk.es/REPO)
+* [berk.es/RESTpres](http://berk.es/RESTpres)
