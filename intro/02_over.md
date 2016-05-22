@@ -11,5 +11,5 @@
 * Github: [github.com/berkes/RESTpres](http://github.com/berkes/RESTpres)
 
 !SLIDE bullets incremental
-# Over mij en NAME #
+# Over mij en REST API implementaties #
 
