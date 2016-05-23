@@ -227,7 +227,12 @@
 <li>Proxies kunnen cachen.</li>
 <li>GET, HEAD, OPTIONS. Niet PATCH, PUT, POST of DELETE.</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/7">
+</div><div id="REST/02_REST_basis" class="slide code" data-transition="none"><div class="content code" ref="REST/02_REST_basis/7">
+<pre><code>curl -i http://localhost:3000/toilet-locations/63a4a8ce-191f-4812-b242-6093139c879e
+
+curl -H 'If-None-Match: W/"aa2d5488ac813807a86ef275b4fbf85a"' -i http://localhost:3000/toilet-locations/63a4a8ce-191f-4812-b242-6093139c879e
+</code></pre></div>
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/8">
 <h1>REST Constraints - Client-Server</h1>
 
 <ul>
@@ -238,13 +243,13 @@
 <li>Layered System</li>
 <li>Code on Demand (optional)</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/8">
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/9">
 <h1>REST Constraints - Client-Server</h1>
 
 <ul>
 <li>Dat is het hele doel van een Web API.</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/9">
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/10">
 <h1>REST Constraints - Layered System</h1>
 
 <ul>
@@ -255,7 +260,7 @@
 <li><strong>Layered System</strong></li>
 <li>Code on Demand (optional)</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/10">
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/11">
 <h1>REST Constraints - Layered System</h1>
 
 <ul>
@@ -263,7 +268,7 @@
 <li>Client &#x27F7;  Proxy &#x27F7;  Load Balancer &#x27F7;  Webserver &#x27F7;  Applicatie</li>
 <li>Is hetzelfde</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/11">
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/12">
 <h1>REST Constraints  - Uniform Interface</h1>
 
 <ul>
@@ -274,7 +279,7 @@
 <li>Layered System</li>
 <li>Code on Demand (optional)</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="REST/02_REST_basis/12">
+</div><div id="REST/02_REST_basis" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="REST/02_REST_basis/13">
 <h1>REST Constraints - Uniform Interface</h1>
 
 <ul>
@@ -283,7 +288,7 @@
 <li>Self-descriptive Messages</li>
 <li>Hypermedia as the Engine of Application State (HATEOAS)</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/13">
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/14">
 <h1>REST Constraints - Uniform Interface  - Resource Based</h1>
 
 <ul>
@@ -292,7 +297,7 @@
 <li>Self-descriptive Messages</li>
 <li>Hypermedia as the Engine of Application State (HATEOAS)</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="REST/02_REST_basis/14">
+</div><div id="REST/02_REST_basis" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="REST/02_REST_basis/15">
 <h1>REST Constraints - Uniform Interface  - Resource Based</h1>
 
 <ul>
@@ -304,7 +309,23 @@
 <li>Niet <strong>Acties</strong>
 </li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/15">
+</div><div id="REST/02_REST_basis" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="REST/02_REST_basis/16">
+<h1>Example</h1>
+
+<ul>
+<li>We have toilet-location</li>
+<li>We want to add a rating</li>
+<li>What do we do?</li>
+</ul></div>
+</div><div id="REST/02_REST_basis" class="slide code" data-transition="none"><div class="content code" ref="REST/02_REST_basis/17">
+<p>POST /toilet-locations/{id}/ratings
+        { rating: { stars: 5 } }</p>
+
+<p>VS</p>
+
+<p>POST /toilet-locations/rate
+        { stars: 5 }</p></div>
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/18">
 <h1>REST Constraints - Uniform Interface  - Manipulation</h1>
 
 <ul>
@@ -313,14 +334,17 @@
 <li>Self-descriptive Messages</li>
 <li>Hypermedia as the Engine of Application State (HATEOAS)</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/16">
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/19">
 <h1>REST Constraints - Uniform Interface  - Manipulation</h1>
 
 <ul>
 <li>Wanneer een client een <em>weergave van een resource heeft</em>, inclusief metadata,
 heeft de client <em>genoeg informatie</em> om het te bewerken, vernieuwen of verwijderen.</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/17">
+</div><div id="REST/02_REST_basis" class="slide code" data-transition="none"><div class="content code" ref="REST/02_REST_basis/20">
+<pre><code>curl -s http://localhost:3000/toilet-locations/02472a1b-58c3-4e36-acc9-a593117b3642 | json_pp
+</code></pre></div>
+</div><div id="REST/02_REST_basis" class="slide bullets" data-transition="none"><div class="content bullets" ref="REST/02_REST_basis/21">
 <h1>REST Constraints - Uniform Interface  - Self-descriptive</h1>
 
 <ul>
@@ -329,7 +353,7 @@ heeft de client <em>genoeg informatie</em> om het te bewerken, vernieuwen of ver
 <li><strong>Self-descriptive Messages</strong></li>
 <li>Hypermedia as the Engine of Application State (HATEOAS)</li>
 </ul></div>
-</div><div id="REST/02_REST_basis" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="REST/02_REST_basis/18">
+</div><div id="REST/02_REST_basis" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="REST/02_REST_basis/22">
 <h1>REST Constraints - Uniform Interface  - Self-descriptive</h1>
 
 <ul>
@@ -338,6 +362,12 @@ heeft de client <em>genoeg informatie</em> om het te bewerken, vernieuwen of ver
 <li>Encoding</li>
 <li>Cacheability</li>
 </ul></div>
+</div><div id="REST/02_REST_basis" class="slide code" data-transition="none"><div class="content code" ref="REST/02_REST_basis/23">
+<pre><code>curl -s http://localhost:3000/toilet-locations/4b17022e-f581-4432-8549-f728776c0404 | json_pp
+</code></pre></div>
+</div><div id="REST/02_REST_basis" class="slide code" data-transition="none"><div class="content code" ref="REST/02_REST_basis/24">
+<pre><code>curl -s -I http://localhost:3000/toilet-locations/02472a1b-58c3-4e36-acc9-a593117b3642
+</code></pre></div>
 </div><div id="HATEOAS/01_titel" class="slide center" data-transition="none"><div class="content center" ref="HATEOAS/01_titel">
 <h1>HATEOAS</h1></div>
 </div><div id="HATEOAS/02_hyperlink" class="slide center" data-transition="none"><div class="content center" ref="HATEOAS/02_hyperlink/1">
@@ -360,10 +390,13 @@ heeft de client <em>genoeg informatie</em> om het te bewerken, vernieuwen of ver
 <blockquote>
 <p>The HATEOAS constraint decouples client and server in a way that allows the server functionality to evolve independently.</p>
 </blockquote></div>
-</div><div id="HATEOAS/02_hyperlink" class="slide center" data-transition="none"><div class="content center" ref="HATEOAS/02_hyperlink/5">
+</div><div id="HATEOAS/02_hyperlink" class="slide bullets" data-transition="none"><div class="content bullets" ref="HATEOAS/02_hyperlink/5">
 <h1>Engine of Application State</h1>
 
-<p><a href="https://twitter.com/berkes/status/734763358344339457">A state machine</a></p></div>
+<ul>
+<li><a href="https://twitter.com/berkes/status/734763358344339457">A state machine</a></li>
+<li><a href="https://www.google.nl/?q=pager#safe=off&amp;q=pager">Another State Machine</a></li>
+</ul></div>
 </div><div id="HATEOAS/02_hyperlink" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="HATEOAS/02_hyperlink/6">
 <h1>Hoe HATEOAS te implementeren?</h1>
 
@@ -371,6 +404,10 @@ heeft de client <em>genoeg informatie</em> om het te bewerken, vernieuwen of ver
 <li>Links</li>
 <li>Interne documentatie, beschrijvende elementen</li>
 <li>OPTIONS</li>
+</ul></div>
+</div><div id="HATEOAS/02_hyperlink" class="slide code" data-transition="none"><div class="content code" ref="HATEOAS/02_hyperlink/7">
+<ul>
+<li>curl -s http://localhost:3000/toilet-locations | json_pp</li>
 </ul></div>
 </div><div id="JSON/01_titel" class="slide center" data-transition="none"><div class="content center" ref="JSON/01_titel">
 <h1>JSON</h1></div>
