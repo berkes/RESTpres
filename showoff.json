@@ -5,6 +5,7 @@
     {"section":"APIs"},
     {"section":"REST"},
     {"section":"HATEOAS"},
+    {"section":"JSON"},
     {"section":"ToiletBuffer"},
     {"section":"outro"}
   ]

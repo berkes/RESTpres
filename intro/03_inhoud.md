@@ -2,6 +2,6 @@
 * APIs
 * REST principe
 * HATEOAS, Hypertext As The Engine Of Application State.
-* Kan een API RESTful zijn?
+* JSON
 * ToiletBuffer - Who's next?
 * Links
