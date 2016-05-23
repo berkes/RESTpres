@@ -49,6 +49,12 @@
 * Proxies kunnen cachen.
 * GET, HEAD, OPTIONS. Niet PATCH, PUT, POST of DELETE.
 
+!SLIDE code
+
+    curl -i http://localhost:3000/toilet-locations/63a4a8ce-191f-4812-b242-6093139c879e
+
+    curl -H 'If-None-Match: W/"aa2d5488ac813807a86ef275b4fbf85a"' -i http://localhost:3000/toilet-locations/63a4a8ce-191f-4812-b242-6093139c879e
+
 !SLIDE bullets
 # REST Constraints - Client-Server #
 
@@ -115,6 +121,23 @@
 * **Acties** op **Dingen**
 * Niet **Acties**
 
+!SLIDE bullets incremental
+# Example
+
+* We have toilet-location
+* We want to add a rating
+* What do we do?
+
+!SLIDE code
+
+   POST /toilet-locations/{id}/ratings
+        { rating: { stars: 5 } }
+
+VS
+
+   POST /toilet-locations/rate
+        { stars: 5 }
+
 !SLIDE bullets
 # REST Constraints - Uniform Interface  - Manipulation #
 
@@ -128,6 +151,10 @@
 
 * Wanneer een client een *weergave van een resource heeft*, inclusief metadata,
   heeft de client *genoeg informatie* om het te bewerken, vernieuwen of verwijderen.
+
+!SLIDE code
+
+    curl -s http://localhost:3000/toilet-locations/02472a1b-58c3-4e36-acc9-a593117b3642 | json_pp
 
 !SLIDE bullets
 # REST Constraints - Uniform Interface  - Self-descriptive #
@@ -144,3 +171,11 @@
 * MIME-types
 * Encoding
 * Cacheability
+
+!SLIDE code
+
+    curl -s http://localhost:3000/toilet-locations/4b17022e-f581-4432-8549-f728776c0404 | json_pp
+
+!SLIDE code
+
+    curl -s -I http://localhost:3000/toilet-locations/02472a1b-58c3-4e36-acc9-a593117b3642

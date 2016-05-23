@@ -31,3 +31,7 @@
 * Links
 * Interne documentatie, beschrijvende elementen
 * OPTIONS
+
+!SLIDE code
+
+* curl -s http://localhost:3000/toilet-locations | json_pp
