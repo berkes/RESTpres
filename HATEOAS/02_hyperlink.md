@@ -1,6 +1,6 @@
 !SLIDE center
 
-[what is this?](https://twitter.com/berkes/status/734763358344339457)
+# [wat is dit?](https://twitter.com/berkes/status/734763358344339457)
 
 !SLIDE bullets incremental
 
@@ -12,7 +12,7 @@
 !SLIDE bullets
 # HATEOAS
 
-> A REST client needs no prior knowledge about how to interact with any particular application or server beyond a generic understanding of hypermedia.
+> A REST client needs *no prior knowledge* about how to interact with any particular application or server beyond a *generic understanding of hypermedia*.
 
 !SLIDE bullets
 # Het voordeel van HATEOAS
@@ -27,6 +27,6 @@
 !SLIDE bullets incremental
 # Hoe HATEOAS te implementeren?
 
-* Links.
-* Interne documentatie, beschrijvende elementen.
+* Links
+* Interne documentatie, beschrijvende elementen
 * OPTIONS

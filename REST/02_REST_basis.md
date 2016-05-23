@@ -126,7 +126,8 @@
 !SLIDE bullets
 # REST Constraints - Uniform Interface  - Manipulation #
 
-* Alle informatie om acties op resources uit te voeren zit in het resource.
+* Wanneer een client een *weergave van een resource heeft*, inclusief metadata,
+  heeft de client *genoeg informatie* om het te bewerken, vernieuwen of verwijderen.
 
 !SLIDE bullets
 # REST Constraints - Uniform Interface  - Self-descriptive #
