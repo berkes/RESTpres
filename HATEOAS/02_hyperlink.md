@@ -19,10 +19,11 @@
 
 > The HATEOAS constraint decouples client and server in a way that allows the server functionality to evolve independently.
 
-!SLIDE center
+!SLIDE bullets
 # Engine of Application State
 
-[A state machine](https://twitter.com/berkes/status/734763358344339457)
+* [A state machine](https://twitter.com/berkes/status/734763358344339457)
+* [Another State Machine](https://www.google.nl/?q=pager#safe=off&q=pager)
 
 !SLIDE bullets incremental
 # Hoe HATEOAS te implementeren?
