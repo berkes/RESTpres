@@ -8,12 +8,12 @@
 !SLIDE bullets incremental
 # REST Constraints #
 
+* Uniform Interface
 * Stateless
 * Cacheable
 * Client-Server
 * Layered System
 * Code on Demand (optional)
-* Uniform Interface
 
 !SLIDE bullets
 # REST Constraints - Stateless #
@@ -84,12 +84,12 @@
 !SLIDE bullets
 # REST Constraints  - Uniform Interface #
 
+* **Uniform Interface**
 * Stateless
 * Cacheable
 * Client-Server
 * Layered System
 * Code on Demand (optional)
-* **Uniform Interface**
 
 !SLIDE bullets incremental
 # REST Constraints - Uniform Interface #
