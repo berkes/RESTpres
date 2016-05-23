@@ -1,7 +1,7 @@
 !SLIDE bullets
 * APIs
 * REST principe
-* Kan een API RESTful zijn?
 * HATEOAS, Hypertext As The Engine Of Application State.
+* Kan een API RESTful zijn?
 * ToiletBuffer - Who's next?
 * Links

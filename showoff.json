@@ -4,7 +4,6 @@
     {"section":"intro"},
     {"section":"APIs"},
     {"section":"REST"},
-    {"section":"REST-APIs"},
     {"section":"HATEOAS"},
     {"section":"ToiletBuffer"},
     {"section":"outro"}
