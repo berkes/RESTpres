@@ -6,6 +6,7 @@
     {"section":"REST"},
     {"section":"HATEOAS"},
     {"section":"JSON"},
+    {"section":"tips"},
     {"section":"ToiletBuffer"},
     {"section":"outro"}
   ]
