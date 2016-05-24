@@ -94,7 +94,7 @@
 </div>
 
 <div id="slides" class="offscreen" style="display:none;">
-<div id="intro/01_titel" class="slide center" data-transition="none"><div class="content center" ref="intro/01_titel">
+<div id="intro/01_titel" class="slide center" data-transition="none"><div class="content center" ref="intro/01_titel/1">
 <h1>REST API implementaties</h1>
 
 <h2>Nijmegen Developer Meetup - 24 mei 2016</h2>
@@ -102,6 +102,10 @@
 <blockquote>
 <p>Hoe bouw ik een goede REST API?</p>
 </blockquote></div>
+</div><div id="intro/01_titel" class="slide center" data-transition="none"><div class="content center" ref="intro/01_titel/2">
+<p><img src="./file/intro/installing.png" width="262" height="405" alt="But still, my scheme for creating and saving user config files and data locally to preserve them across reinstalls might be useful for--wait, that's cookies."/></p>
+
+<p><a href="https://xkcd.com/1367/">From xkcd</a></p></div>
 </div><div id="intro/02_over" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="intro/02_over/1">
 <h1>Over</h1>
 
@@ -133,6 +137,7 @@
 <li>REST principe</li>
 <li>HATEOAS, Hypertext As The Engine Of Application State.</li>
 <li>JSON</li>
+<li>Willekeurige Tips</li>
 <li>ToiletBuffer - Who's next?</li>
 <li>Links</li>
 </ul></div>
@@ -432,6 +437,31 @@ heeft de client <em>genoeg informatie</em> om het te bewerken, vernieuwen of ver
 <li>Opbouw van resources</li>
 <li>Opbouw van Errors</li>
 <li>Afhandelen van paging, sorting, filtering.</li>
+</ul></div>
+</div><div id="tips/01_titel" class="slide center" data-transition="none"><div class="content center" ref="tips/01_titel">
+<h1>Tips</h1></div>
+</div><div id="tips/02_tips" class="slide center" data-transition="none"><div class="content center" ref="tips/02_tips/1">
+<h1>UUIDs</h1></div>
+</div><div id="tips/02_tips" class="slide center" data-transition="none"><div class="content center" ref="tips/02_tips/2">
+<h1>HTTPS</h1></div>
+</div><div id="tips/02_tips" class="slide center" data-transition="none"><div class="content center" ref="tips/02_tips/3">
+<h1>Versioning met Headers</h1>
+
+<pre><code>Accept-Version: 1
+</code></pre></div>
+</div><div id="tips/02_tips" class="slide center" data-transition="none"><div class="content center" ref="tips/02_tips/4">
+<h1>Authenticatie met tokens</h1>
+
+<pre><code>Authorization: Token token="abc", nonce="def"
+</code></pre></div>
+</div><div id="tips/02_tips" class="slide center" data-transition="none"><div class="content center" ref="tips/02_tips/5">
+<h1>Gebruik een REST client buiten je stack</h1>
+
+<ul>
+<li>REST/HTTP is simpel genoeg.</li>
+<li>State, (de)-serializing enzovoort zit niet in de weg.</li>
+<li>Gewoon een simpel request is zo gedaan.</li>
+<li>cURL, Paw (OSX), Addons voor Firefox en Chrome.</li>
 </ul></div>
 </div><div id="ToiletBuffer/01_title" class="slide center" data-transition="none"><div class="content center" ref="ToiletBuffer/01_title">
 <h1>ToiletBuffer</h1></div>
